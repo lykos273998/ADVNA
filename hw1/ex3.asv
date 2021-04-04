@@ -1,0 +1,20 @@
+%exercise 3
+
+%parameters
+T = 1/30;
+c = 1;
+A = delsq(numgrid('L', N + 1));
+
+h_t = 1/M
+
+function u_m1 = FWE(u_m, t, L, f)
+
+end
+
+function u = u0(x,t)
+    u = (x - x^2)*(x^2 + sin(2*pi*x));
+end
+
+function ff = f(x,t)
+    f = zeros(length(x),1);
+end 

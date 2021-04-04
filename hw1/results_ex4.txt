@@ -1,0 +1,20 @@
+M = 12
+--------------------------------------------------------------------------------------------
+BWE SOR      Tot iter: 752	 Avg iter: 62.67	 Accuracy: 2.233295e-02	 CPU time(ms): 1.88
+CN SOR       Tot iter: 613	 Avg iter: 51.08	 Accuracy: 5.965265e-04	 CPU time(ms): 1.65
+
+M = 60
+--------------------------------------------------------------------------------------------
+BWE SOR      Tot iter: 1679	 Avg iter: 27.98	 Accuracy: 4.573718e-03	 CPU time(ms): 0.71
+CN SOR       Tot iter: 1230	 Avg iter: 20.50	 Accuracy: 1.758411e-05	 CPU time(ms): 0.57
+
+M = 120
+--------------------------------------------------------------------------------------------
+BWE SOR      Tot iter: 2447	 Avg iter: 20.39	 Accuracy: 2.300709e-03	 CPU time(ms): 0.51
+CN SOR       Tot iter: 1813	 Avg iter: 15.11	 Accuracy: 5.215283e-06	 CPU time(ms): 0.42
+
+M = 600
+--------------------------------------------------------------------------------------------
+BWE SOR      Tot iter: 6262	 Avg iter: 10.44	 Accuracy: 4.636729e-04	 CPU time(ms): 0.37
+CN SOR       Tot iter: 4905	 Avg iter: 8.18	 Accuracy: 1.493713e-06	 CPU time(ms): 0.31
+
