@@ -1,0 +1,2 @@
+B = load('apache1.mat');
+matrix = cell2mat(struct2cell(B));

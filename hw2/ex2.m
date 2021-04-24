@@ -73,6 +73,6 @@ end
 
 disp("k estimated")
 disp(its)
-
+disp("! results in 'Ex2_results.txt' !")
 
 
