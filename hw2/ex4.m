@@ -30,8 +30,7 @@ for N = [100]
     tic()
     [x2, flag2, relres2, iter2, resvec2] = pcg(A,b,tol,maxit,L,L');
     t2 = toc();
-    iter_est = - log(err_red)/4*(sqrt(kA) + 1);
-    its = [its,int32(iter_est)];
+    
     
     %IC0
     

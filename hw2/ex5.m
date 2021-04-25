@@ -34,7 +34,7 @@ fprintf(outfile,"Gauss-Seidel \t: %d \t %.2f \t %e\n", iter2, t, norm(x2 - x_exa
 
 %c SOR
 disp("Running SOR opt")
-rho_j = abs(1 - 2 * (sin(pi/2 * (1-h)))^2);
+rho_j = max(abs(1 - 2 * (sin(pi/2 * h))^2),abs(1 - 2 * (sin(pi/2 * (1-h)))^2));
 
 omega_opt = 2/(1 + sqrt(1 - rho_j^2));
 
@@ -96,15 +96,89 @@ t = toc();
 fprintf(outfile,"PCG ICT \t: %d \t %.2f \t %e \t tolerance: %e\n", iter8, t, norm(x7 - x_exact)/x_ex_norm, opts.droptol);
 
 figure()
-semilogy(1:iter3, vdiff3, 1:iter4, vdiff4, 1:iter5, vdiff5)
+semilogy(1:iter3, vdiff3,'.-', 1:iter4, vdiff4,'.-', 1:iter5, vdiff5,'.-')
 legend("SOR (\omega_{opt})", "SOR (\omega_{opt} * 1.01)", "SOR (\omega_{opt} / 1.01)")
 xlabel("Iterations")
 ylabel("||x_{k+1} - x_k||")
 figure()
-semilogy(1:(iter6 + 1),resvec6,1:(iter7 + 1),resvec7,1:(iter8 + 1),resvec8)
+semilogy(1:(iter6 + 1),resvec6,'.-',1:(iter7 + 1),resvec7,'.-',1:(iter8 + 1),resvec8,'.-')
 legend("CG", "PCG IC(0)", "PCG ICT (tol 1e-2)")
 xlabel("Iterations")
 ylabel("||r_k||")
 
+
+
+
+
+
+
+
+
+
+
+function [x, iter, vdiff] = SOR(A,b,x0,max_iter,tol,omega)
+    %SOR solver function
+    
+    %decomposition of A
+    L = tril(A,-1);
+    U = triu(A,1);
+    D = diag(diag(A));
+    M = omega*L + D;
+    N = (1 - omega)*D - omega*U;
+    omega_b = omega*b;
+    
+    %initialization of auxiliary vectors
+    x_old = x0;
+    x_new = x0;
+    err = tol + 1;
+    vdiff = [];
+    
+    for iter = 1:max_iter
+        
+        
+        x_temp = N*x_old + omega_b;
+        x_new = M\x_temp;
+        
+        err = norm(x_new - x_old);
+        x_old = x_new;
+        vdiff = [vdiff, err];
+        if err < tol
+            break
+        end
+        
+    end
+    
+    x = x_new;
+    
+end
+
+
+function [x,iter,vdiff] = jacobi(A, b, x0, max_iter, tolerance)
+    L = tril(A,-1);
+    U = triu(A,1);
+    D = diag(diag(A));
+    M = D;
+    N = -(L+U);
+    err = tolerance + 1;
+    x_old = x0;
+    x_new = x0;
+    vdiff = [];
+    for iter = 1:max_iter
+        
+        x_temp = N * x_old + b;
+        x_new = M\x_temp;
+        
+        err = norm(x_new - x_old);
+        x_old = x_new;
+        vdiff = [vdiff, err];
+        if err < tolerance
+            break
+        end
+        
+    end
+    
+    x = x_new;
+    
+end
 
 

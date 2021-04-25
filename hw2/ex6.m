@@ -13,7 +13,7 @@ L = ichol(A);
 [x2, flag2, relres2, iter2, resvec2] = pcg(A,b,tol,maxiter, L, L');
 
 b_norm = norm(b);
-semilogy(1:(iter1 + 1), resvec1/b_norm ,1:(iter2 + 1), resvec2/b_norm);
+semilogy(1:(iter1 + 1), resvec1/b_norm,'.-',1:(iter2 + 1), resvec2/b_norm,'.-');
 legend("CG","PCG IC(0)");
 xlabel("iterations")
 ylabel("||r_k||/||b||")

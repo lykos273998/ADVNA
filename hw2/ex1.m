@@ -1,4 +1,4 @@
-N = 201;
+N = 101;
 A = delsq(numgrid('S', N + 1));
 n = size(A,1);
 b = ones(n,1)/(n);
@@ -15,6 +15,8 @@ hold on
 semilogy(1:size(resvec2,2), resvec2, "b-*")
 hold off
 legend("MATLAB pcg - IC(0) ","mypcg - IC(0) ")
+title(sprintf("N = %d, System size = %d, tolerance = %.2e", N, n, tol));
+xlabel('Iterations');
+ylabel('||r_k||');
 
-
-fprintf("|| sol_mypcg - sol_pcg || = %e \n", norm(x1-x2) )
+fprintf("|| sol_mypcg - sol_pcg || = %4.2e \n", norm(x1-x2) )
