@@ -82,9 +82,9 @@ L = ichol(A);
 
 tic();
 [x7, flag7, relres7, iter7, resvec7] = pcg(A,b,tol_cg,maxiter, L, L');
-fprintf(outfile,"PCG IC(0)  \t: %d \t %.2f \t %e \n", iter7, t, norm(x7 - x_exact)/x_ex_norm);
-
 t = toc();
+
+fprintf(outfile,"PCG IC(0)  \t: %d \t %.2f \t %e \n", iter7, t, norm(x7 - x_exact)/x_ex_norm);
 %h PCG ICT 1e-2
 disp("Running PCG ICT")
 opts.type = 'ict';
@@ -93,6 +93,7 @@ L = ichol(A, opts);
 tic();
 [x8, flag8, relres8, iter8, resvec8] = pcg(A,b,tol_cg,maxiter, L, L');
 t = toc();
+
 fprintf(outfile,"PCG ICT \t: %d \t %.2f \t %e \t tolerance: %e\n", iter8, t, norm(x7 - x_exact)/x_ex_norm, opts.droptol);
 
 figure()
