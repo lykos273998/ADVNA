@@ -1,27 +1,24 @@
-function [x, resvec, iter] = mypcg(A,b,tol,maxit,L)
+function [x,iter,resvec] = mypcg(A,b,tol,maxit,L)
 
     x0 = zeros(size(A,1),1);
     
     r = b - A*x0;
-    p = (L')\r;
-    p = L\p;
+    p = L'\(L\r);
     rho = r.'*p;
     x = x0;
     err = tol + 1;
     tolB = tol*norm(b);
     resvec =[];
     resvec = [resvec,norm(r)];
-    for iter = 1:maxit
-        if err < tolB
-            break
-        end
+    iter = 0;
+    while (iter < maxit && err > tolB)
+        
         
         z = A*p;
         alpha = rho/(z.'*p);
         x = x + alpha*p;
         r = r - alpha*z;
-        g = (L')\r;
-        g = L\g;
+        g = (L')\(L\r);
         rho_new = r.'*g;
         beta = rho_new/rho;
         p = g + beta*p;
@@ -30,6 +27,7 @@ function [x, resvec, iter] = mypcg(A,b,tol,maxit,L)
         rho = rho_new;
         err = norm(r);
         resvec = [resvec,err];
+        iter = iter + 1;
             
             
     end

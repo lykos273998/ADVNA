@@ -57,6 +57,6 @@ end
 disp("k estimated")
 disp(its)
 disp("! results in 'Ex3_results.txt' !")
-
+fclose('all');
 
 

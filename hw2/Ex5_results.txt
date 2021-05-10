@@ -1,9 +1,9 @@
-Method  	 Iterations  CPU 	 rel err 	 optional info
-Jacobi   	: 25600 	 14.07       7.606142e-03
-Gauss-Seidel: 25600 	 14.95       5.814340e-05
-SOR (opt) 	: 690        0.44        4.087808e-10 	 omega opt: 1.96 rho_j 0.9998 rho_omega 0.9615
-SOR (2) 	: 1141       0.70        2.603808e-10 	 omega: 1.98
-SOR (3) 	: 1446       0.86        1.004877e-09 	 omega: 1.94
-Conj. Grad. : 298        0.14        7.156420e-11 
-PCG IC(0)  	: 124        0.18        9.846513e-11 
-PCG ICT 	: 69         0.11        9.846513e-11 	 tolerance: 1.000000e-02
+Method  	 Iterations 	CPU 	 rel err 	 optional info
+Jacobi   	: 25600 	 11.18 	 7.606142e-03
+Gauss-Seidel 	: 25600 	 14.06 	 5.814340e-05
+SOR (opt) 	: 690 	 0.38 	 4.087808e-10 	 omega opt: 1.96 rho_j 0.9998 rho_omega 0.9615
+SOR (2) 	: 1141 	 0.70 	 2.603808e-10 	 omega: 1.98
+SOR (3) 	: 1446 	 0.79 	 1.004877e-09 	 omega: 1.94
+Conj. Grad. : 298 	 0.11 	 7.156420e-11 
+PCG IC(0)  	: 124 	 0.16 	 9.846513e-11 
+PCG ICT 	: 69 	 0.10 	 9.846513e-11 	 tolerance: 1.000000e-02

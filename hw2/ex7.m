@@ -12,6 +12,8 @@ for N = NS
     L = ichol(A);
     
     [W, Lambda] = eigs(A, L*L', p, 'sm');
+    
+    
     H = sparse(W' * A* W);
     H = inv(H);
     
@@ -27,5 +29,8 @@ for N = NS
     title(sprintf("N = %d, System size = %d",N,n));
     
 end
+
+
+
 
 

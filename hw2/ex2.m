@@ -7,12 +7,13 @@ fprintf(outfile, "                        |           |IC          IC(1e-2)    I
 fprintf(outfile, "N-1 	 n       k(A)   |Iter   CPU |Iter   CPU |Iter   CPU |Iter   CPU |\n");
 ks = [];
 its = [];
+tol = 1e-8;
 
 for N = Ns
     A = delsq(numgrid('S',N+1));
     n = size(A,1);
     disp(sprintf("running: n = %d",n))
-    tol = 1e-8;
+    
     maxit = 2000;
     
     x_exact = zeros(n,1);
@@ -29,14 +30,11 @@ for N = Ns
     % IC(0)
     x_diff = x1 - x_exact;
     
-   
-    
-    
-    %kA = ( 2 * iter1 / log(ratio/2) + 1) ^2;
     kA = (4/(pi^2) * (N^2));
     ks = [ks, kA];
     err_red = sqrt(x_diff.'*A*x_diff)/sqrt(x_exact.'*A*x_exact);
     
+    %IC 0
     L = ichol(A);
     tic()
     [x2, flag2, relres2, iter2, resvec2] = pcg(A,b,tol,maxit,L,L');
@@ -74,5 +72,5 @@ end
 disp("k estimated")
 disp(its)
 disp("! results in 'Ex2_results.txt' !")
-
+fclose('all');
 

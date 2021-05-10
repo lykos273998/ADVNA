@@ -106,7 +106,7 @@ semilogy(1:(iter6 + 1),resvec6,'.-',1:(iter7 + 1),resvec7,'.-',1:(iter8 + 1),res
 legend("CG", "PCG IC(0)", "PCG ICT (tol 1e-2)")
 xlabel("Iterations")
 ylabel("||r_k||")
-
+fclose('all');
 
 
 

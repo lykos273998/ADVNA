@@ -50,5 +50,5 @@ for N = [100]
 end
 
 disp("! results in 'Ex4_results.txt' !")
-
+fclose('all');
 
