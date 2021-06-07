@@ -1,0 +1,8 @@
+MyGMRES                                                  MATLAB GMRES
+Last res        True res         Transf res      iter 	 Last res       True res        Transf res     iter
+-------- LEFT Preconditioner
+8.916389e-11 	 5.452136e-13 	 8.916382e-11 	 93 	 8.925772e-11 	 5.452275e-13 	 8.925765e-11 	 93 
+-------- RIGHT Preconditioner
+1.232926e-12 	 1.232926e-12 	 1.232926e-12 	 92 	 1.232948e-12 	 1.232948e-12 	 1.232948e-12 	 92 
+-------- SPLIT Preconditioner
+8.935647e-13 	 4.981767e-13 	 8.935647e-13 	 93 	 8.938746e-13 	 4.984209e-13 	 8.938747e-13 	 93 

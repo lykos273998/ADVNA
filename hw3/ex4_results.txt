@@ -1,0 +1,5 @@
+             last res   	 CPU time 	 Iterations
+restart: 10 1.959245e-07 	 7.264790e-01 	 600 
+restart: 20 1.216474e-09 	 8.420430e-01 	 600 
+restart: 30 1.380036e-12 	 1.408020e-01 	 88 
+restart: 50 9.941939e-13 	 1.195970e-01 	 41 

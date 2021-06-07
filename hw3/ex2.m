@@ -17,10 +17,11 @@ maxit = 550;
 x0 = zeros(n,1);
 disp("my")
 [x1 ,iter1,resvec1,flag1] = mygmres(A,b,tol,maxit,x0);
-%disp("native")
-%[x2,flag2,relres2,iter2,resvec2] = gmres(A,b,550,tol);
 
-disp(flag1)
-disp(iter1)
+
 semilogy(resvec1,'.-')
-norm(x1 - x_exact)
+title("mygmres 'mat13041.rig' ")
+ylabel("||r_k||")
+xlabel("iterations")
+disp("norm of difference of the solution from the exact one")
+disp(norm(x1 - x_exact))

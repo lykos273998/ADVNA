@@ -1,5 +1,13 @@
 function [x,iter,resvec,flag] = mygmres(A,b,tol,maxit,x0)
-%UNTITLED Summary of this function goes here
+%GMRES implementation
+%---input---
+%A: system matrix, b: rhs of the system
+%tol: tolerance on relative residual
+%x0: initial guess
+%---output---
+%x: solution, iter: total number of iterations done
+%resvec: vector of residuals
+%flag: flag signaling a canonical termination or a breakdown
     r = b - A*x0;
     k = 0;
     n = length(x0);
@@ -29,7 +37,7 @@ function [x,iter,resvec,flag] = mygmres(A,b,tol,maxit,x0)
         h_k = norm(v);
       
         
-        if h_k < 1e-12
+        if abs(h_k) < 1e-14 %in floating point cannot use x == 0
             flag = -1;
             [Q,R] = qr(H_mat);
             break

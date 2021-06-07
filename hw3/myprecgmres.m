@@ -1,5 +1,17 @@
-function [x,iter,resvec,flag] = myprecgmres(A,b,tol,maxit,x0,ptype,L , U)
-%UNTITLED Summary of this function goes here
+function [x,iter,resvec,flag] = myprecgmres(A,b,tol,maxit,x0,ptype,L,U)
+%preconditioned GMRES implementation
+%---input---
+%A: system matrix, b: rhs of the system
+%tol: tolerance on relative residual
+%x0: initial guess
+%ptype: litteral for deciding type of preconditioner, namely "L","R","S"
+%for left, right, split preconditioning
+%L,U matrices which (LU)^-1 is approximate inverse of A
+%---output---
+%x: solution, iter: total number of iterations done
+%resvec: vector of  residuals
+%flag: flag signaling a canonical termination or a breakdown
+
     if ptype == 'L'
         r = U\(L\(b - A*x0));
         get_v = @(v) U\(L\(A*v));
