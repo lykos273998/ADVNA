@@ -16,4 +16,6 @@ semilogy(resvec_dir, '.-')
 hold on
 semilogy(resvec_gmres, '.-')
 legend('direct method', 'gmres')
+ylabel("||F(x_k)||")
+xlabel("iteration")
 hold off

@@ -10,3 +10,6 @@ B0 = @(x) J0;
 [x, iter, resvec] = quasi_newton(x0,F,B0,1e-8,100);
 
 semilogy(resvec,'*-');
+ylabel("||F(x_k)||")
+xlabel("iteration")
+title("Quasi newton method on curve intersection prob.")

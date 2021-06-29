@@ -6,6 +6,8 @@ function [xstar, iter, resvec] = newton(x0,F,Jac, tol, itmax,lsol, gmres_restart
     xstar = x0;
     f = -F(x0);
     
+    setup.type = "nofill";
+    
     if nargin < 7
         gmres_restart = 50;
         gmres_tol = 1e-10;
@@ -30,7 +32,7 @@ function [xstar, iter, resvec] = newton(x0,F,Jac, tol, itmax,lsol, gmres_restart
             while res > exit_tol & iter < itmax
                 iter = iter + 1;
                 J = Jac(xstar);
-                [L,U] = ilu(J);
+                [L,U] = ilu(J,setup);
                 
                 [s, it_gmres] = gmres(J, f, gmres_restart, gmres_tol, gmres_maxit, L, U, xstar);
                 xstar = xstar + s;

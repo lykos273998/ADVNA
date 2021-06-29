@@ -45,8 +45,8 @@ tic();
 [x_quasi, iter_quasi, resvec_quasi] = quasi_newton(x0,F,B0, tol, itmax);
 t = toc();
 fprintf(outfile, "iteration\t||F(x_k)||\n");
-for i=0:iter_quasi
-    fprintf(outfile,"   %d    \t %e \n", i, resvec_quasi(i+1));
+for i=1:iter_quasi
+    fprintf(outfile,"   %d    \t %e \n", i, resvec_quasi(i));
 end
 fprintf(outfile,"CPU TIME: %.2f\n", t);
 semilogy(resvec_quasi,'.-')
@@ -175,7 +175,7 @@ while res > exit_tol & iter_inx < itmax
         iter_inx = iter_inx + 1;
         J = Jac(x_inx);
         [L,U] = ilu(J,setup);
-        eta = min(eta_max, l*res^2);
+        eta = min(eta_max, l*res);
         [s, a,b,it_gmres] = gmres(J, f, gmres_restart, eta, gmres_maxit, L, U, x_inx);
         x_inx = x_inx + s;
 

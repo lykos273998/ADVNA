@@ -9,7 +9,7 @@ function [x,iter,resvec] = quasi_newton(x0,F,B0,tol, itmax)
     k = 0;
     exit_tol = tol*norm(F(x0));
     err = norm(f);
-    resvec = [err];
+    resvec = [];
     s_mat = [];
     x = x0; 
     
