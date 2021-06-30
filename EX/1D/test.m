@@ -1,4 +1,4 @@
-N=1024;
+N=8192*2;
 %A=delsq(linspace(0,1,N+1));
 
 A = L1D(N);
@@ -25,8 +25,6 @@ norm(x - x_exc)
 
 %semilogy(resvec)
 
-x_p = linspace(0,1,15).';
-%x_pc = linspace(0,1,7).';
-%x_pf = linspace(0,1,31).';
+rate = -log(norm(x - x_exc)/norm(x0 - x_exc))/iter
 
 
