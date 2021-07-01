@@ -1,4 +1,4 @@
-N=8192*2;
+N=4096;
 %A=delsq(linspace(0,1,N+1));
 
 A = L1D(N);
@@ -12,7 +12,7 @@ b = A*x_exc;
 maxit = 10000;
 tol = 1e-10;
 tic();
-[x, iter,resvec] = MG_2L_1D(A,b,x0,maxit,tol);
+[x, iter,resvec] = MG_1D_gen(A,b,x0,maxit,tol,5);
 t2 = toc()
 tic();
 [x2, iter2,resvec2] = SOR(A,b,x0,maxit,tol,1);
