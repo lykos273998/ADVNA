@@ -18,7 +18,7 @@ outfile = fopen('results.txt','w');
 
 
 maxit = 2000;
-tol = 1e-10;
+tol = 1e-10 ;
 if test_1d 
     
     fprintf(outfile,"*******************************\n");
