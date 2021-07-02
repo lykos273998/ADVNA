@@ -1,4 +1,4 @@
-N=512;
+N=1024;
 A=delsq(numgrid('S',N+1));
 
 n = size(A,1);
@@ -11,10 +11,10 @@ b = A*x_exc;
 maxit = 10000;
 tol = 1e-10;
 tic();
-[x, iter,resvec] = MG_2D_gen(A,b,x0,maxit,tol,N - 1,2);
+[x, iter,resvec] = MG_2D_gen(A,b,x0,maxit,tol,N - 1,3);
 t2 = toc()
 tic();
-[x2, iter2,resvec2] = SOR(A,b,x0,3,tol,1);
+[x2, iter2,resvec2] = mypcg(A,b,x0,maxit,tol,speye(n));
 %xx = A\b;
 t3 = toc()
 iter
