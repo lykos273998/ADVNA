@@ -10,7 +10,7 @@ function r_2h = f_to_c_2d(r_h,nx)
    for i = 1:nx
        ii = 2*i;
         for j = 1:nx
-                        
+            jj = 2*j;           
             r_2h((i - 1)*nx + j) = r_h( (ii - 1)*nx_h + jj);
             
         end

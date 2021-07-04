@@ -7,11 +7,11 @@ lvl_1d = [2 3 4];
 test_1d = 1;
 test_2d = 1;
 
-meshes_1d = [32 64 128 256 512 1024];
+meshes_1d = [32 64 128 256 512 1024, 2048, 4096];
 
 lvl_2d = [2 3];
 
-meshes_2d = [32 64 128 256, 512];
+meshes_2d = [32 64 128 256];
 
 outfile = fopen('results.txt','w');
 
