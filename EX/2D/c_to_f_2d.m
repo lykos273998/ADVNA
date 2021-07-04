@@ -1,4 +1,7 @@
 function  r_h = c_to_f_2d(r_2h,nx)
+%interpolation function, works with a 2d grid, uses linear interpolation
+%to make the prolongation into a finer grid with 2h as grid spacing
+
    n = size(r_2h,1);
    r_h = zeros((nx*2+1)^2,1);
     

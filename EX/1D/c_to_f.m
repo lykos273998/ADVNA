@@ -1,4 +1,7 @@
 function  r_h = c_to_f(r_2h)
+%coarse to finer grid interpolation procedure
+%uses linear interpolation
+
    n = size(r_2h,1);
    r_h = zeros(n*2+1,1);
    j = 2*1;

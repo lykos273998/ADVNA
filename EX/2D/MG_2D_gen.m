@@ -1,5 +1,5 @@
 function [x, iter,resvec] = MG_2D_gen(A,b,x0,maxit,tol,nx,max_lvl)
-    %2 level multigrid test
+    %general multi grid V-cycle scheme
     iter = 0;
     exit_tol = tol*norm(b);
     x = x0;
@@ -10,7 +10,7 @@ function [x, iter,resvec] = MG_2D_gen(A,b,x0,maxit,tol,nx,max_lvl)
     n = size(A,1); 
     
     nx_2 = nx;
-    
+    %calculation of the all discrete laplacians needed 
     for i = 2:max_lvl
         nx_2 = floor(nx_2/2);
         A_vec{i} = delsq(numgrid('S',nx_2 + 2));

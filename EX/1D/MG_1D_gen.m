@@ -1,5 +1,5 @@
 function [x, iter,resvec] = MG_2D_gen(A,b,x0,maxit,tol,max_lvl)
-    %2 level multigrid test
+    %general multi grid V-cycle scheme
     iter = 0;
     exit_tol = tol*norm(b);
     x = x0;

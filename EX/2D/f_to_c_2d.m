@@ -1,4 +1,7 @@
 function r_2h = f_to_c_2d(r_h,nx)
+%restriction function
+%injects values of a finer grid into a coarser one,
+%uses simple injection of pouints (2i,2j) into (i,j) of the finer grid
    
    r_2h = zeros(nx^2,1);
   
@@ -7,25 +10,8 @@ function r_2h = f_to_c_2d(r_h,nx)
    for i = 1:nx
        ii = 2*i;
         for j = 1:nx
-            jj = 2*j;
-            
-            val = 0;
-            
-            %disp(ii*nx_h + jj)
                         
-            val = val + r_h( (ii - 1)*nx_h + jj);
-            
-            %val = val + r_h( (ii - 1)*nx_h + (jj - 1));
-            %val = val + r_h( (ii + 1)*nx_h + (jj - 1));
-            %val = val + r_h( (ii - 1)*nx_h + (jj + 1));
-            %val = val + r_h( (ii + 1)*nx_h + (jj + 1));
-            
-            %val = val + 2*r_h( (ii)*nx_h + (jj - 1)) ;
-            %val = val + 2*r_h( (ii)*nx_h + (jj + 1)) ;
-            %val = val + 2*r_h( (ii - 1)*nx_h + (jj)) ;
-            %val = val + 2*r_h( (ii + 1)*nx_h + (jj)) ;
-            
-            r_2h((i - 1)*nx + j) = val;
+            r_2h((i - 1)*nx + j) = r_h( (ii - 1)*nx_h + jj);
             
         end
    end

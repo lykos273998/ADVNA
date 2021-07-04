@@ -1,4 +1,8 @@
 function e_h = V_cycle(r_h, nx, nu1, nu2, A_vec, tol, lvl, max_lvl)
+%V-Cycle function,
+%calls recursively itself up to the
+%maximium depth specified,once reached the coarser grid it solves exactly
+%the equation Ae = r
     if lvl == max_lvl
         e_h = A_vec{lvl}\r_h;
     else
