@@ -25,7 +25,7 @@ V-Cycle levels 2
 	 -------------------------- 
 		 MultiGrid >>> Iter: 27  Conv Rate: 0.3022  err norm: 1.103037e-07 CPU: 3.670000e-03
 		 CG        >>> Iter: 128  Conv Rate: 0.1118  err norm: 7.759085e-14 CPU: 1.946000e-03
-
+  
 	 Mesh subdivisions (1D) 512 
 	 -------------------------- 
 		 MultiGrid >>> Iter: 27  Conv Rate: 0.3016  err norm: 1.624233e-07 CPU: 5.860000e-03
