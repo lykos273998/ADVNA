@@ -1,0 +1,38 @@
+function  r_h = get_c_to_f_2d(r_2h,nx)
+%interpolation function, works with a 2d grid, uses linear interpolation
+%to make the prolongation into a finer grid with 2h as grid spacing
+
+   n = size(r_2h,1);
+   
+   nx_h = nx*2 + 1;
+   
+   P = sparse(zeros(nx_h, nx));
+   
+   for i = 1:nx
+       ii = 2*i;
+        for j = 1:nx
+            jj = 2*j;
+            idx_2h = (i - 1)*nx + j); 
+            idx_h = (ii - 1)*nx_h + jj;
+            
+            P(idx_h,idx_2h) = 4;
+            
+            P
+            
+            r_h( (ii - 1 - 1)*nx_h + (jj - 1)) = r_h( (ii - 1 - 1)*nx_h + (jj - 1)) + val;
+            r_h( (ii + 1 - 1)*nx_h + (jj - 1)) = r_h( (ii + 1 - 1)*nx_h + (jj - 1)) + val;
+            r_h( (ii - 1 - 1)*nx_h + (jj + 1)) = r_h( (ii - 1 - 1)*nx_h + (jj + 1)) + val;
+            r_h( (ii + 1 - 1)*nx_h + (jj + 1)) = r_h( (ii + 1 - 1)*nx_h + (jj + 1)) + val;
+            
+            r_h( (ii - 1 )*nx_h + (jj - 1)) = r_h( (ii - 1)*nx_h + (jj - 1)) + 2*val;
+            r_h( (ii - 1)*nx_h + (jj + 1)) = r_h( (ii - 1)*nx_h + (jj + 1)) + 2*val;
+            r_h( (ii - 1 - 1)*nx_h + (jj)) = r_h( (ii - 1 - 1)*nx_h + (jj)) + 2*val;
+            r_h( (ii + 1 - 1)*nx_h + (jj)) = r_h( (ii + 1 - 1)*nx_h + (jj)) + 2*val;
+            
+        end
+   end
+   
+   r_h = r_h/4;
+   
+end
+
