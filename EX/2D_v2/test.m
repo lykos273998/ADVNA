@@ -2,17 +2,12 @@ N=16;
 A=delsq(numgrid('S',N+1));
 
 B = delsq(numgrid('S', N/2 + 1));
-size(B,1)
-[P,R] = get_PR_fw(N/2 - 1); 
+size(B,1);
+P = get_PR_fw(N/2 - 1); 
 
 size(P);
 
-B;
 
-R*A*P;
-
-
-full(R);
 
 %gg = [1 1 1 1 1 1 1 1 2 2 2 2 2 1 1 2 3 3 3 2 1 1 2 3 4 3 2 1 1 2 3 3 3 2 1 1 2 2 2 2 2 1 1 1 1 1 1 1 1 ].';
 
@@ -35,7 +30,7 @@ b = A*x_exc;
 maxit = 10000;
 tol = 1e-10;
 tic();
-[x, iter,resvec] = MG_2D_gen(A,b,x0,maxit,tol,N,128,1);
+[x, iter,resvec] = MG_2D_gen_v2(A,b,x0,maxit,tol,N,16,1);
 t2 = toc()
 
 iter
