@@ -38,8 +38,9 @@ if test_1d
             x0 = zeros(size(A,1),1);
             b = A*x_exc;
            
-            [xmg, img, resmg, t1, t2 ] = MG_1D_gen_v2(A,b,x0,maxit,tol,max_lvl,0);
-            tmg = t1 + 12;
+            [xmg, img, resmg, t1, t2 ] = MG_1D_gen_v2(A,b,x0,maxit,tol,max_lvl,verbose);
+            tmg = t1 + t2;
+          
 
             tic();
             [xcg, icg, rescg] = mypcg(A,b,x0,maxit,tol,speye(size(A,1)));

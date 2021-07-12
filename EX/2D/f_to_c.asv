@@ -1,7 +1,0 @@
-function  f_to_c(r_h,r_2h)
-    n = size(r_2h);
-    for i = 1:n]
-        r_2h(i) = 0.25*(r_h(i) + 2*r:h(i+1) + r_h(i+2));
-    end  
-end
-

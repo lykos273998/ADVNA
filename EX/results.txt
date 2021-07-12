@@ -8,43 +8,43 @@ Coarsest grid 8
 
 	 Mesh subdivisions (1D) 64 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.9667  err norm: 1.165124e-09 CPU: 1.200396e+01
-		 CG        >>> Iter: 32  Conv Rate: 0.4582  err norm: 1.726673e-14 CPU: 1.079300e-02
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8835  err norm: 3.035311e-09 CPU: 1.493200e-02
+		 CG        >>> Iter: 32  Conv Rate: 0.4582  err norm: 1.726673e-14 CPU: 5.496000e-03
 
 	 Mesh subdivisions (1D) 128 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8951  err norm: 3.769394e-09 CPU: 1.200051e+01
-		 CG        >>> Iter: 64  Conv Rate: 0.2355  err norm: 9.531767e-15 CPU: 5.430000e-04
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8618  err norm: 5.529644e-09 CPU: 1.996000e-03
+		 CG        >>> Iter: 64  Conv Rate: 0.2355  err norm: 9.531767e-15 CPU: 5.490000e-04
 
 	 Mesh subdivisions (1D) 256 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8672  err norm: 7.369607e-09 CPU: 1.200075e+01
-		 CG        >>> Iter: 128  Conv Rate: 0.1118  err norm: 7.759085e-14 CPU: 1.382000e-03
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8520  err norm: 8.773168e-09 CPU: 2.996000e-03
+		 CG        >>> Iter: 128  Conv Rate: 0.1118  err norm: 7.759085e-14 CPU: 1.908000e-03
 
 	 Mesh subdivisions (1D) 512 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8547  err norm: 1.204522e-08 CPU: 1.200130e+01
-		 CG        >>> Iter: 256  Conv Rate: 0.0555  err norm: 1.425668e-13 CPU: 4.225000e-03
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8473  err norm: 1.311990e-08 CPU: 4.721000e-03
+		 CG        >>> Iter: 256  Conv Rate: 0.0555  err norm: 1.425668e-13 CPU: 4.420000e-03
 
 	 Mesh subdivisions (1D) 1024 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8486  err norm: 1.827150e-08 CPU: 1.200262e+01
-		 CG        >>> Iter: 512  Conv Rate: 0.0286  err norm: 7.313716e-14 CPU: 1.626700e-02
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8449  err norm: 1.907975e-08 CPU: 1.303600e-02
+		 CG        >>> Iter: 512  Conv Rate: 0.0286  err norm: 7.313716e-14 CPU: 2.365300e-02
 
 	 Mesh subdivisions (1D) 2048 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8456  err norm: 2.676673e-08 CPU: 1.200459e+01
-		 CG        >>> Iter: 1024  Conv Rate: 0.0140  err norm: 2.280920e-13 CPU: 5.140700e-02
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8437  err norm: 2.736584e-08 CPU: 1.503400e-02
+		 CG        >>> Iter: 1024  Conv Rate: 0.0140  err norm: 2.280920e-13 CPU: 6.294800e-02
 
 	 Mesh subdivisions (1D) 4096 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8440  err norm: 3.853930e-08 CPU: 1.200825e+01
-		 CG        >>> Iter: 2000  Conv Rate: 0.0001  err norm: 3.778889e+01 CPU: 1.446180e-01
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8431  err norm: 3.897794e-08 CPU: 2.243700e-02
+		 CG        >>> Iter: 2000  Conv Rate: 0.0001  err norm: 3.778889e+01 CPU: 1.539690e-01
 
 	 Mesh subdivisions (1D) 8192 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8433  err norm: 5.500330e-08 CPU: 1.201586e+01
-		 CG        >>> Iter: 2000  Conv Rate: 0.0000  err norm: 7.432362e+01 CPU: 4.403800e-01
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8428  err norm: 5.532228e-08 CPU: 4.288400e-02
+		 CG        >>> Iter: 2000  Conv Rate: 0.0000  err norm: 7.432362e+01 CPU: 3.243830e-01
 
 
 ++++++++++++++++++++++
@@ -52,43 +52,43 @@ Coarsest grid 16
 
 	 Mesh subdivisions (1D) 64 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 2.1008  err norm: 2.486791e-10 CPU: 1.200023e+01
-		 CG        >>> Iter: 32  Conv Rate: 0.4582  err norm: 1.726673e-14 CPU: 1.860000e-04
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.9422  err norm: 1.543546e-09 CPU: 8.960000e-04
+		 CG        >>> Iter: 32  Conv Rate: 0.4582  err norm: 1.726673e-14 CPU: 2.200000e-04
 
 	 Mesh subdivisions (1D) 128 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.9608  err norm: 1.770165e-09 CPU: 1.200034e+01
-		 CG        >>> Iter: 64  Conv Rate: 0.2355  err norm: 9.531767e-15 CPU: 4.280000e-04
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.9022  err norm: 3.472797e-09 CPU: 1.736000e-03
+		 CG        >>> Iter: 64  Conv Rate: 0.2355  err norm: 9.531767e-15 CPU: 5.270000e-04
 
 	 Mesh subdivisions (1D) 256 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.9108  err norm: 4.461570e-09 CPU: 1.200060e+01
-		 CG        >>> Iter: 128  Conv Rate: 0.1118  err norm: 7.759085e-14 CPU: 1.180000e-03
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8849  err norm: 6.011609e-09 CPU: 2.596000e-03
+		 CG        >>> Iter: 128  Conv Rate: 0.1118  err norm: 7.759085e-14 CPU: 1.748000e-03
 
 	 Mesh subdivisions (1D) 512 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8891  err norm: 8.100968e-09 CPU: 1.200115e+01
-		 CG        >>> Iter: 256  Conv Rate: 0.0555  err norm: 1.425668e-13 CPU: 3.494000e-03
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8765  err norm: 9.373024e-09 CPU: 4.146000e-03
+		 CG        >>> Iter: 256  Conv Rate: 0.0555  err norm: 1.425668e-13 CPU: 4.177000e-03
 
 	 Mesh subdivisions (1D) 1024 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8787  err norm: 1.292295e-08 CPU: 1.200231e+01
-		 CG        >>> Iter: 512  Conv Rate: 0.0286  err norm: 7.313716e-14 CPU: 1.293900e-02
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8723  err norm: 1.391908e-08 CPU: 7.038000e-03
+		 CG        >>> Iter: 512  Conv Rate: 0.0286  err norm: 7.313716e-14 CPU: 1.327500e-02
 
 	 Mesh subdivisions (1D) 2048 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8735  err norm: 1.942052e-08 CPU: 1.200447e+01
-		 CG        >>> Iter: 1024  Conv Rate: 0.0140  err norm: 2.280920e-13 CPU: 4.623600e-02
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8701  err norm: 2.017823e-08 CPU: 1.228600e-02
+		 CG        >>> Iter: 1024  Conv Rate: 0.0140  err norm: 2.280920e-13 CPU: 4.758300e-02
 
 	 Mesh subdivisions (1D) 4096 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8708  err norm: 2.833310e-08 CPU: 1.200813e+01
-		 CG        >>> Iter: 2000  Conv Rate: 0.0001  err norm: 3.778889e+01 CPU: 1.492470e-01
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8691  err norm: 2.889789e-08 CPU: 2.189700e-02
+		 CG        >>> Iter: 2000  Conv Rate: 0.0001  err norm: 3.778889e+01 CPU: 1.493280e-01
 
 	 Mesh subdivisions (1D) 8192 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8694  err norm: 4.071491e-08 CPU: 1.201570e+01
-		 CG        >>> Iter: 2000  Conv Rate: 0.0000  err norm: 7.432362e+01 CPU: 3.786560e-01
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8685  err norm: 4.112958e-08 CPU: 4.153900e-02
+		 CG        >>> Iter: 2000  Conv Rate: 0.0000  err norm: 7.432362e+01 CPU: 3.122960e-01
 
 
 ++++++++++++++++++++++
@@ -96,43 +96,43 @@ Coarsest grid 32
 
 	 Mesh subdivisions (1D) 64 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 1  Conv Rate: 14.6943  err norm: 1.604532e-14 CPU: 1.200019e+01
-		 CG        >>> Iter: 32  Conv Rate: 0.4582  err norm: 1.726673e-14 CPU: 1.850000e-04
+		 MultiGrid >>> Iter: 5  Conv Rate: 2.0833  err norm: 3.040814e-10 CPU: 7.650000e-04
+		 CG        >>> Iter: 32  Conv Rate: 0.4582  err norm: 1.726673e-14 CPU: 2.850000e-04
 
 	 Mesh subdivisions (1D) 128 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 2.1393  err norm: 2.266221e-10 CPU: 1.200031e+01
-		 CG        >>> Iter: 64  Conv Rate: 0.2355  err norm: 9.531767e-15 CPU: 4.730000e-04
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.9696  err norm: 1.599566e-09 CPU: 1.295000e-03
+		 CG        >>> Iter: 64  Conv Rate: 0.2355  err norm: 9.531767e-15 CPU: 8.180000e-04
 
 	 Mesh subdivisions (1D) 256 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.9880  err norm: 1.832632e-09 CPU: 1.200065e+01
-		 CG        >>> Iter: 128  Conv Rate: 0.1118  err norm: 7.759085e-14 CPU: 1.180000e-03
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.9304  err norm: 3.556831e-09 CPU: 2.162000e-03
+		 CG        >>> Iter: 128  Conv Rate: 0.1118  err norm: 7.759085e-14 CPU: 2.492000e-03
 
 	 Mesh subdivisions (1D) 512 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.9386  err norm: 4.582080e-09 CPU: 1.200112e+01
-		 CG        >>> Iter: 256  Conv Rate: 0.0555  err norm: 1.425668e-13 CPU: 3.495000e-03
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.9135  err norm: 6.119976e-09 CPU: 4.068000e-03
+		 CG        >>> Iter: 256  Conv Rate: 0.0555  err norm: 1.425668e-13 CPU: 6.008000e-03
 
 	 Mesh subdivisions (1D) 1024 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.9176  err norm: 8.258433e-09 CPU: 1.200221e+01
-		 CG        >>> Iter: 512  Conv Rate: 0.0286  err norm: 7.313716e-14 CPU: 1.294100e-02
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.9053  err norm: 9.515824e-09 CPU: 6.853000e-03
+		 CG        >>> Iter: 512  Conv Rate: 0.0286  err norm: 7.313716e-14 CPU: 1.439500e-02
 
 	 Mesh subdivisions (1D) 2048 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.9075  err norm: 1.312876e-08 CPU: 1.200438e+01
-		 CG        >>> Iter: 1024  Conv Rate: 0.0140  err norm: 2.280920e-13 CPU: 4.625500e-02
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.9012  err norm: 1.411280e-08 CPU: 1.430000e-02
+		 CG        >>> Iter: 1024  Conv Rate: 0.0140  err norm: 2.280920e-13 CPU: 5.488600e-02
 
 	 Mesh subdivisions (1D) 4096 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.9023  err norm: 1.969766e-08 CPU: 1.200800e+01
-		 CG        >>> Iter: 2000  Conv Rate: 0.0001  err norm: 3.778889e+01 CPU: 1.561110e-01
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8991  err norm: 2.044604e-08 CPU: 2.276600e-02
+		 CG        >>> Iter: 2000  Conv Rate: 0.0001  err norm: 3.778889e+01 CPU: 1.528010e-01
 
 	 Mesh subdivisions (1D) 8192 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 5  Conv Rate: 1.8997  err norm: 2.871434e-08 CPU: 1.201651e+01
-		 CG        >>> Iter: 2000  Conv Rate: 0.0000  err norm: 7.432362e+01 CPU: 3.692890e-01
+		 MultiGrid >>> Iter: 5  Conv Rate: 1.8980  err norm: 2.927228e-08 CPU: 4.066700e-02
+		 CG        >>> Iter: 2000  Conv Rate: 0.0000  err norm: 7.432362e+01 CPU: 3.100450e-01
 
 
 
@@ -147,28 +147,28 @@ Coarsest grid 8
 
 	 Mesh subdivisions (2D) 64 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7173  err norm: 3.128606e-09 CPU: 3.170700e-02
-		 CG        >>> Iter: 134  Conv Rate: 0.0802  err norm: 1.119169e-09 CPU: 1.570700e-02
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7173  err norm: 3.128606e-09 CPU: 2.360500e-02
+		 CG        >>> Iter: 134  Conv Rate: 0.0802  err norm: 1.119169e-09 CPU: 1.404900e-02
 
 	 Mesh subdivisions (2D) 128 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7064  err norm: 7.333030e-09 CPU: 6.793000e-02
-		 CG        >>> Iter: 267  Conv Rate: 0.0391  err norm: 4.560959e-09 CPU: 1.574050e-01
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7064  err norm: 7.333030e-09 CPU: 6.878400e-02
+		 CG        >>> Iter: 267  Conv Rate: 0.0391  err norm: 4.560959e-09 CPU: 1.381280e-01
 
 	 Mesh subdivisions (2D) 256 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7070  err norm: 1.461234e-08 CPU: 2.740400e-01
-		 CG        >>> Iter: 524  Conv Rate: 0.0186  err norm: 4.656344e-08 CPU: 9.775750e-01
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7070  err norm: 1.461234e-08 CPU: 2.657710e-01
+		 CG        >>> Iter: 524  Conv Rate: 0.0186  err norm: 4.656344e-08 CPU: 9.699490e-01
 
 	 Mesh subdivisions (2D) 512 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7111  err norm: 2.767478e-08 CPU: 1.250071e+00
-		 CG        >>> Iter: 1003  Conv Rate: 0.0096  err norm: 1.325699e-07 CPU: 8.905045e+00
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7111  err norm: 2.767478e-08 CPU: 1.195085e+00
+		 CG        >>> Iter: 1003  Conv Rate: 0.0096  err norm: 1.325699e-07 CPU: 8.912734e+00
 
 	 Mesh subdivisions (2D) 1024 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7155  err norm: 5.207944e-08 CPU: 5.413701e+00
-		 CG        >>> Iter: 1977  Conv Rate: 0.0047  err norm: 4.518610e-07 CPU: 7.413112e+01
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7155  err norm: 5.207944e-08 CPU: 5.792455e+00
+		 CG        >>> Iter: 1977  Conv Rate: 0.0047  err norm: 4.518610e-07 CPU: 7.329082e+01
 
 
 ++++++++++++++++++++++
@@ -176,28 +176,28 @@ Coarsest grid 16
 
 	 Mesh subdivisions (2D) 64 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7209  err norm: 2.977674e-09 CPU: 1.806300e-02
-		 CG        >>> Iter: 134  Conv Rate: 0.0802  err norm: 1.119169e-09 CPU: 1.638600e-02
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7209  err norm: 2.977674e-09 CPU: 1.759900e-02
+		 CG        >>> Iter: 134  Conv Rate: 0.0802  err norm: 1.119169e-09 CPU: 1.349700e-02
 
 	 Mesh subdivisions (2D) 128 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7091  err norm: 7.066470e-09 CPU: 6.199600e-02
-		 CG        >>> Iter: 267  Conv Rate: 0.0391  err norm: 4.560959e-09 CPU: 1.319960e-01
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7091  err norm: 7.066470e-09 CPU: 6.903400e-02
+		 CG        >>> Iter: 267  Conv Rate: 0.0391  err norm: 4.560959e-09 CPU: 1.355680e-01
 
 	 Mesh subdivisions (2D) 256 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7092  err norm: 1.416525e-08 CPU: 2.632870e-01
-		 CG        >>> Iter: 524  Conv Rate: 0.0186  err norm: 4.656344e-08 CPU: 1.000458e+00
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7092  err norm: 1.416525e-08 CPU: 2.864720e-01
+		 CG        >>> Iter: 524  Conv Rate: 0.0186  err norm: 4.656344e-08 CPU: 1.029505e+00
 
 	 Mesh subdivisions (2D) 512 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7133  err norm: 2.681448e-08 CPU: 1.269117e+00
-		 CG        >>> Iter: 1003  Conv Rate: 0.0096  err norm: 1.325699e-07 CPU: 8.907062e+00
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7133  err norm: 2.681448e-08 CPU: 1.155004e+00
+		 CG        >>> Iter: 1003  Conv Rate: 0.0096  err norm: 1.325699e-07 CPU: 8.973404e+00
 
 	 Mesh subdivisions (2D) 1024 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7180  err norm: 5.032591e-08 CPU: 5.499475e+00
-		 CG        >>> Iter: 1977  Conv Rate: 0.0047  err norm: 4.518610e-07 CPU: 7.277600e+01
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7180  err norm: 5.032591e-08 CPU: 5.638064e+00
+		 CG        >>> Iter: 1977  Conv Rate: 0.0047  err norm: 4.518610e-07 CPU: 7.348511e+01
 
 
 ++++++++++++++++++++++
@@ -205,26 +205,26 @@ Coarsest grid 32
 
 	 Mesh subdivisions (2D) 64 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7787  err norm: 1.340213e-09 CPU: 2.014700e-02
-		 CG        >>> Iter: 134  Conv Rate: 0.0802  err norm: 1.119169e-09 CPU: 1.355700e-02
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7787  err norm: 1.340213e-09 CPU: 2.034100e-02
+		 CG        >>> Iter: 134  Conv Rate: 0.0802  err norm: 1.119169e-09 CPU: 1.356500e-02
 
 	 Mesh subdivisions (2D) 128 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7265  err norm: 5.554001e-09 CPU: 7.048700e-02
-		 CG        >>> Iter: 267  Conv Rate: 0.0391  err norm: 4.560959e-09 CPU: 1.561300e-01
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7265  err norm: 5.554001e-09 CPU: 6.682000e-02
+		 CG        >>> Iter: 267  Conv Rate: 0.0391  err norm: 4.560959e-09 CPU: 1.371910e-01
 
 	 Mesh subdivisions (2D) 256 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7201  err norm: 1.218457e-08 CPU: 2.718130e-01
-		 CG        >>> Iter: 524  Conv Rate: 0.0186  err norm: 4.656344e-08 CPU: 9.686320e-01
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7201  err norm: 1.218457e-08 CPU: 2.689070e-01
+		 CG        >>> Iter: 524  Conv Rate: 0.0186  err norm: 4.656344e-08 CPU: 9.482300e-01
 
 	 Mesh subdivisions (2D) 512 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7231  err norm: 2.343630e-08 CPU: 1.212821e+00
-		 CG        >>> Iter: 1003  Conv Rate: 0.0096  err norm: 1.325699e-07 CPU: 8.925494e+00
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7231  err norm: 2.343630e-08 CPU: 1.197204e+00
+		 CG        >>> Iter: 1003  Conv Rate: 0.0096  err norm: 1.325699e-07 CPU: 8.999187e+00
 
 	 Mesh subdivisions (2D) 1024 
 	 -------------------------- 
-		 MultiGrid >>> Iter: 6  Conv Rate: 1.7281  err norm: 4.375656e-08 CPU: 5.423777e+00
-		 CG        >>> Iter: 1977  Conv Rate: 0.0047  err norm: 4.518610e-07 CPU: 7.296720e+01
+		 MultiGrid >>> Iter: 6  Conv Rate: 1.7281  err norm: 4.375656e-08 CPU: 6.071342e+00
+		 CG        >>> Iter: 1977  Conv Rate: 0.0047  err norm: 4.518610e-07 CPU: 7.331379e+01
 

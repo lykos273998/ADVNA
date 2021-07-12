@@ -20,6 +20,7 @@ function [x, iter,resvec,t1,t2] = MG_2D_gen(A,b,x0,maxit,tol, min_mesh, verbose 
         nx_aux = nx_aux/2;
         max_lvl = max_lvl + 1;
     end
+    
         
     
     nx_aux = n;
@@ -41,7 +42,7 @@ function [x, iter,resvec,t1,t2] = MG_2D_gen(A,b,x0,maxit,tol, min_mesh, verbose 
         iter = iter + 1;
         
         %first level
-        [x, i, vdiff] = jacobi(A,b,x,nu1,tol);
+        [x, i, vdiff] = SOR(A,b,x,nu1,tol,1);
         
         r_h = b - A*x;
         
@@ -57,7 +58,7 @@ function [x, iter,resvec,t1,t2] = MG_2D_gen(A,b,x0,maxit,tol, min_mesh, verbose 
         
         x = x + e_h;
              
-        [x, i, vdiff] = jacobi(A,b,x,nu2,tol);
+        [x, i, vdiff] = SOR(A,b,x,nu2,tol,1);
         
         res = norm(b - A*x);
         resvec = [resvec,res];
